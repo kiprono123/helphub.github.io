@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charity Profile - HelpHub</title>
+  <link rel="stylesheet" href="about.css"> 
+</head>
+<body>
+  <header>
+     <div class="container">
+      <h1 class="logo">HelpHub</h1>
+     <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="charities.html">Charities</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <section class="charity-profile">
+      <h2>MENTAL HEALTH ASSOCIATION </h2>
+      <p>Welcome to Mental Health Matters, where we prioritize mental well-being and advocate for those affected by mental health challenges. At Mental Health Matters, we believe that mental health is just as important as physical health, and everyone deserves access to support and resources.
+
+Our mission is to raise awareness, reduce stigma, and provide vital support services to individuals and families affected by mental health conditions. Through education, outreach programs, and community initiatives, we strive to promote understanding and acceptance of mental health issues.
+
+Located in the heart of our community, Mental Health Matters offers a range of services; <ul>
+        <li>Counseling</li>
+        <li>Support groups</li>
+        <li>Crisis intervention</li>
+        <li>Education workshops</li>
+      </ul>We are committed to providing a safe and welcoming space where individuals can seek help and find hope on their journey toward recovery.
+
+Join us in our mission to break the silence surrounding mental health and create a more supportive and inclusive society for all. Together, we can make a difference in the lives of those struggling with mental health challenges.
+</p>
+      
+      <button id="volunteer-button">Volunteer Now</button>
+
+      <form id="volunteer-form" style="display: none;">
+        <h3>Volunteer Information</h3>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone"><br>
+
+        <label for="message">Message (optional):</label><br>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+
+        <input type="submit" value="Submit">
+      </form>
+    </section>
+  </div>
+
+  <footer>
+   <p>Location: Seattle, WA</p>
+      <p>Contact Information: mentalhealthassociation@google.com</p>  
+      <p>(123) 456-7890</p>
+  </footer>
+
+  <script>
+    document.getElementById('volunteer-button').addEventListener('click', function() {
+      document.getElementById('volunteer-form').style.display = 'block';
+    });
+  </script>
+</body>
+</html>

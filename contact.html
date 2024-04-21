@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charity Profile - HelpHub</title>
+  <link rel="stylesheet" href="about.css"> 
+</head>
+<body>
+  <header>
+     <div class="container">
+      <h1 class="logo">HelpHub</h1>
+     <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="charities.html">Charities</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <section class="charity-profile">
+      <h2>CONTACT</h2>
+      <p>Location: Orlando, Florida</p>
+      <p1>Contact Information: helphubcharity@google.com</p1>
+      <p> (756) 406-6810</p>
+
+      <button id="volunteer-button">Volunteer Now</button>
+
+      <form id="volunteer-form" style="display: none;">
+        <h3>Volunteer Information</h3>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone"><br>
+
+        <label for="message">Message (optional):</label><br>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+
+        <input type="submit" value="Submit">
+      </form>
+    </section>
+  </div>
+
+  <footer>
+    <div class="container">
+      <ul class="social-links">
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">Instagram</a></li>
+      </ul>
+      <p>Contact: info@helphub.com</p>
+      <p>&copy; 2024 HelpHub. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // JavaScript to toggle display of volunteer form
+    document.getElementById('volunteer-button').addEventListener('click', function() {
+      document.getElementById('volunteer-form').style.display = 'block';
+    });
+  </script>
+</body>
+</html>

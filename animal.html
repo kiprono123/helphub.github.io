@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charity Profile - HelpHub</title>
+  <link rel="stylesheet" href="about.css"> 
+</head>
+<body>
+  <header>
+     <div class="container">
+      <h1 class="logo">HelpHub</h1>
+     <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="charities.html">Charities</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <section class="charity-profile">
+      <h2>Bermouth Animal Shelter</h2>
+      <p>
+
+<h1>Mission:</h1>
+At Bermouth Animal Shelter, our mission is to provide a safe haven for abandoned, abused, and neglected animals in our community. We are dedicated to rescuing and rehabilitating animals in need, and ultimately finding them loving forever homes.
+
+      <h4>About Us:</h4>
+Bermouth Animal Shelter was founded in [2002] with the goal of addressing the growing issue of pet overpopulation and homelessness. We believe that every animal deserves a second chance at life, and we work tirelessly to ensure that they receive the care and love they deserve.
+
+<h1>Services:</h1>
+      <ul>
+        <li>Shelter and care for homeless animals</li>
+        <li>Veterinary care, including vaccinations, spaying/neutering, and medical treatment</li>
+        <li>Adoption services to match animals with loving families</li>
+        <li>Education and outreach programs to promote responsible pet ownership and animal welfare</li>
+      </ul>
+
+<h1>Impact:</h1>
+Since our inception, Bermouth Animal Shelter has rescued and rehomed thousands of animals, providing them with a second chance at a happy and healthy life. Our dedicated team of staff and volunteers work around the clock to ensure that every animal receives the care and attention they need.
+
+<h1>How You Can Help:</h1>
+       <ul>
+        <li>ADOPT: Consider adopting a pet from Bermouth Animal Shelter and give them a forever home.</li>
+        <li>VOLUNTEER: Join our team of volunteers and help care for animals, assist with adoption events, or lend your skills in other areas.</li>
+        <li>DONATE: Your generous donations help us provide food, shelter, and medical care to animals in need.</li>
+      </ul>
+
+
+
+
+Join us in making a difference in the lives of animals. Together, we can create a compassionate and caring community for all creatures.
+
+
+</p>
+
+      <button id="volunteer-button">Volunteer Now</button>
+
+      <form id="volunteer-form" style="display: none;">
+        <h3>Volunteer Information</h3>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone"><br>
+
+        <label for="message">Message (optional):</label><br>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+
+        <input type="submit" value="Submit">
+      </form>
+    </section>
+  </div>
+
+  <footer>
+     <p>Location: Denver, CO</p>
+    <p>Contact Information: bermouthanimalshelter@google.com</p> 
+    <p>(719) 450-1290</p>
+  </footer>
+
+  <script>
+    document.getElementById('volunteer-button').addEventListener('click', function() {
+      document.getElementById('volunteer-form').style.display = 'block';
+    });
+  </script>
+</body>
+</html>

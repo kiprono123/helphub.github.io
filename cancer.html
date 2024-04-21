@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charity Profile - HelpHub</title>
+  <link rel="stylesheet" href="about.css"> 
+</head>
+<body>
+  <header>
+     <div class="container">
+      <h1 class="logo">HelpHub</h1>
+     <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="charities.html">Charities</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <section class="charity-profile">
+      <h2>Cancer Support group</h2>
+      <p>Welcome to the Cancer Support Group, where compassion meets resilience. Our charity is dedicated to providing support, resources, and a caring community for individuals and families affected by cancer.
+
+At the Cancer Support Group, we understand that a cancer diagnosis can be overwhelming, both emotionally and practically. That's why we offer a range of services tailored to meet the diverse needs of our members. From one-on-one counseling sessions to support groups and educational workshops, we're here to help you navigate your cancer journey with strength and hope.
+
+Our mission is to empower individuals and families affected by cancer to live their lives to the fullest. Whether you're a cancer survivor, a caregiver, or currently undergoing treatment, you'll find a welcoming space and a supportive network at the Cancer Support Group.
+
+Join us today and let us walk alongside you on your path to healing and resilience.
+
+</p>
+
+      <button id="volunteer-button">Volunteer Now</button>
+
+      <form id="volunteer-form" style="display: none;">
+        <h3>Volunteer Information</h3>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone"><br>
+
+        <label for="message">Message (optional):</label><br>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+
+        <input type="submit" value="Submit">
+      </form>
+    </section>
+  </div>
+   <footer>
+     <p>Location: Evansville, IN</p>
+      <p>Contact Information: cancersupportgroup@google.com</p> 
+      <p>(814) 201-7890</p>
+  </footer>
+  <script>
+    document.getElementById('volunteer-button').addEventListener('click', function() {
+      document.getElementById('volunteer-form').style.display = 'block';
+    });
+  </script>
+</body>
+</html>
